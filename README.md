@@ -13,7 +13,7 @@ The source data for this project can be found here: https://d396qusza40orc.cloud
 
 After downloading and unzipping the requisite source files it is necessary to change R's working directory to the folder in which the source files are located on your computer in order to run this script.
 
-###Project Summary
+###Summary
 
 From the project submission page: "You should create one R script called run_analysis.R that does the following. 
 1. Merges the training and the test sets to create one data set.
