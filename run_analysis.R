@@ -33,6 +33,6 @@ yDataMerged[, 1] <- activityLabels[yDataMerged[, 1], 2]
 # Merge all data and write .txt file for cleaned data
 
 absoluteData <- cbind(xDataMerged, yDataMerged, subjectDataMerged)
-averages_data <- ddply(absoluteData, .(Subject, Activity), function(x) colMeans(x[, 1:66]))
+tidyData <- ddply(absoluteData, .(Subject, Activity), function(x) colMeans(x[, 1:66]))
 
 write.table(tidyData, "tidyData.txt", row.name=FALSE, sep="  |  ")
