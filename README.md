@@ -7,7 +7,7 @@ D.T.
 
 This project is intended to demonstrate competence in basic data cleaning methods.
 
-The source data for this project can be found at ___.
+The source data for this project can be found here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 ###Preparations for Running Script
 
