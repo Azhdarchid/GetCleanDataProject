@@ -8,6 +8,7 @@ In-depth information about the dataset and variables used in and the analysis sc
 
 ###Source Data
 
+Source data here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 ###Data Set Information
 
