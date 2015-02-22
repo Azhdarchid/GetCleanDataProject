@@ -21,7 +21,7 @@ names(yDataMerged) <- "Activity"
 names(subjectDataMerged) = "Subject"
 
 # Extract measurements for xData
-extractor <- grepl("mean | std", meanSTD)
+extractor <- grepl("std | mean", meanSTD)
 xDataMeasures <- xDataMerged[, extractor]
 
 # Correct ydata activity labels
