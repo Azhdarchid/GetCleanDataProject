@@ -21,7 +21,7 @@ names(yDataMerged) <- "Activity"
 names(subjectDataMerged) = "Subject"
 
 # Extract measurements for xData
-extractor <- grepl("mean|std", meanSTD)
+extractor <- grepl("mean | std", meanSTD)
 xDataMeasures <- xDataMerged[, extractor]
 
 # Correct ydata activity labels
@@ -33,6 +33,6 @@ yDataMerged[, 1] <- activityLabels[yDataMerged[, 1], 2]
 # Merge all data and write .txt file for cleaned data
 
 absoluteData <- cbind(xDataMerged, yDataMerged, subjectDataMerged)
-tidyData <- ddply(absoluteData, .(Subject, Activity), function(x) colMeans(x[, 1:66]))
+tidiedData <- ddply(absoluteData, .(Subject, Activity), function(x) colMeans(x[, 1:66]))
 
-write.table(tidyData, "tidyData.txt", row.name=FALSE, sep="  |  ")
+write.table(tidiedData, "tidiedData.txt", row.name=FALSE, sep="  |  ")
